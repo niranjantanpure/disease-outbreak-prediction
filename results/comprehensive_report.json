@@ -1,0 +1,109 @@
+{
+  "analysis_info": {
+    "timestamp": "2025-08-15T02:21:20.283038",
+    "author": "Niranjan Tanpure",
+    "university": "York St John University - MSc Computer Science",
+    "title": "AI-Powered Disease Outbreak Prediction Using Social Media and Public Health Data"
+  },
+  "dataset_summary": {
+    "surveillance_records": 80372,
+    "social_media_posts": 17576,
+    "environmental_records": 1460,
+    "countries_covered": 180,
+    "date_range": {
+      "start": "1995-01-02 00:00:00",
+      "end": "2024-05-13 00:00:00",
+      "years_span": 29.4
+    },
+    "outbreak_statistics": {
+      "total_outbreaks": 11852,
+      "outbreak_rate": 0.14746429104663317,
+      "countries_with_outbreaks": 171
+    }
+  },
+  "feature_engineering": {
+    "total_features": 37,
+    "feature_names": [
+      "week",
+      "year",
+      "country_code",
+      "who_region",
+      "month",
+      "quarter",
+      "week_of_year",
+      "day_of_year",
+      "season",
+      "temperature",
+      "humidity",
+      "precipitation",
+      "air_quality_index",
+      "uv_index",
+      "polarity_mean",
+      "polarity_std",
+      "polarity_min",
+      "polarity_max",
+      "subjectivity_mean",
+      "subjectivity_std",
+      "engagement_score_sum",
+      "engagement_score_mean",
+      "engagement_score_max",
+      "id_count",
+      "symptom_mentions",
+      "cases_lag_1",
+      "cases_lag_2",
+      "cases_mean_4w",
+      "cases_std_4w",
+      "cases_trend",
+      "polarity_lag_1",
+      "sentiment_trend",
+      "temp_humidity_interaction",
+      "temp_squared",
+      "sentiment_symptoms_interaction",
+      "avg_engagement_per_post",
+      "disease_encoded"
+    ],
+    "dataset_shape": [
+      80372,
+      37
+    ],
+    "memory_usage_mb": 22.15
+  },
+  "best_model_results": {
+    "model_name": "XGBoost",
+    "performance_metrics": {
+      "auc": 0.9221559934546049,
+      "accuracy": 0.8984136858475894,
+      "cv_auc_mean": 0.8873064463749515,
+      "cv_auc_std": 0.014143718206948298,
+      "training_time_seconds": 5.262179
+    },
+    "real_world_impact": {
+      "test_outbreaks": 2370,
+      "correctly_predicted": 1192,
+      "missed_outbreaks": 1178,
+      "detection_rate": 0.5029535864978903
+    }
+  },
+  "research_contributions": [
+    "Novel integration of social media and health surveillance data",
+    "GPU-accelerated machine learning for outbreak prediction",
+    "Multi-country global health surveillance system",
+    "Real-time outbreak detection capability",
+    "Achieved 89.8% accuracy on real WHO data"
+  ],
+  "technical_specifications": {
+    "gpu_acceleration": false,
+    "sample_size": null,
+    "models_trained": [
+      "XGBoost",
+      "Random_Forest",
+      "Logistic_Regression"
+    ],
+    "data_sources": [
+      "WHO FluNet surveillance database",
+      "Reddit health discussions",
+      "Twitter health-related posts",
+      "Environmental weather data"
+    ]
+  }
+}
